@@ -1,0 +1,31 @@
+html,
+body {
+    margin: 0;
+    background-color: #000000;
+    color: #fff;
+}
+
+header {
+    text-align: center;
+    background: rgb(36, 0, 0);
+    color: white;
+    padding: 20px;
+}
+
+button {
+    margin-right: 5px;
+}
+
+#player-cards,
+#pc-cards {
+    min-height: 180px;
+}
+
+.card {
+    margin-top: 15px;
+    display: inline-block;
+    position: relative;
+    width: 150px;
+    left: 100px;
+    margin-left: -50px;
+}

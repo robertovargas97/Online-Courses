@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blackjack</title>
+
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/css/styles.css">
+    </head>
+    <body>
+
+        <header>
+            <div class="row">
+                <div class="col">
+                    <h2>
+                        Blackjack
+                    </h2>
+                </div>
+            </div>
+
+        </header>
+
+        <div id="btn-div" class="row mt-4">
+            <div class="col text-center">
+                <button id="newGameBtn" type="button" class="btn btn-success">New
+                    game</button>
+                <button id="drawBtn" type="button" class="btn btn-info">Draw</button>
+                <button id="stopBtn" type="button" class="btn btn-danger">Stop</button>
+            </div>
+        </div>
+
+        <div class="row container mt-4">
+            <div class="col">
+                <h3>Player 1 <small id="playerScore">- Score : 0</small></h3>
+                <div id="player-cards" class="cardsDiv">
+                </div>
+            </div>
+        </div>
+
+        <div class="row container mt-4">
+            <div class="col">
+                <h3>PC <small id="pcScore">- Score : 0</small> </h3>
+
+                <div id="pc-cards" class="cardsDiv">
+                    <!-- <img class="card" src="./assets/cartas/10C.png" alt=""> -->
+                </div>
+            </div>
+        </div>
+
+        <script src="./assets/js/underscore-min.js"></script>
+        <script src="./assets/js/game-min.js"></script>
+
+        <!-- <script>
+
+                game.startGame() ;
+        </script> -->
+    </body>
+</html>
