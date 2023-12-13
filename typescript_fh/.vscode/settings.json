@@ -1,0 +1,14 @@
+{
+  "editor.bracketPairColorization.enabled": true,
+  "workbench.colorCustomizations": {
+    "editorBracketHighlight.foreground1": "#1feb4b",
+    "editorBracketHighlight.foreground2": "#e99a13",
+    "editorBracketHighlight.foreground3": "#5cbbf6",
+    "editorBracketHighlight.foreground4": "#ffffff",
+    "editorBracketHighlight.foreground5": "#ff00bf",
+    "editorBracketHighlight.foreground6": "#abb2c0",
+    "editorBracketHighlight.unexpectedBracket.foreground": "#db6165"
+  },
+  "editor.fontSize": 15,
+  "editor.formatOnSave": true,
+}
