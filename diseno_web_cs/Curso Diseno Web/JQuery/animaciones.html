@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+        </script>
+        <script
+            src="animaciones.js">
+        </script>
+
+        <style>
+            .box{
+                width: 150px;
+                height: 150px;
+                margin-left: 20px;
+                text-align: center;
+                display: inline-block;
+                background: rgb(0, 163, 228);
+                color: white;
+                font-size: 48px; 
+                cursor: pointer;
+            }
+
+            @keyframes colors{
+                0% {background: rgb(0, 163, 228);}
+                50% {background: #000 ;}
+                100% {background: rgb(0, 163, 228);}
+            }
+
+            .animation {
+                animation: colors 3s ease;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <button id="button">Animar</button>
+        <button id="stop">Stop</button>
+        <br>
+        <br>
+        <div id="container">
+
+
+            <div class="box">1</div>
+
+
+        </div>
+
+
+
+
+
+    </body>
+
+</html>

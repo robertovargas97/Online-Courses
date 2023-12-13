@@ -1,0 +1,11 @@
+body {
+  background: #00d362; }
+
+.articulo .titulo {
+  color: white; }
+.articulo .autor {
+  color: #788682; }
+.articulo p {
+  color: black; }
+
+/*# sourceMappingURL=variables.css.map */

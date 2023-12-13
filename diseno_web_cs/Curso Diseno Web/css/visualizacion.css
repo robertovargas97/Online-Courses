@@ -1,0 +1,50 @@
+
+
+a {
+  display: inline-block;
+  background: yellow;
+  padding: 5px;
+  text-decoration: none;
+  /*visibility: hidden;*/
+}
+.caja {
+  color: black;
+  background: tomato;
+  margin: 20px 0;
+  width: 200px;
+  height: 200px;
+  overflow: auto;
+}
+
+.contenedor {
+  background: gray;
+  width: 600px;
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.der {
+  float: right;
+}
+
+.izq {
+  float: left;
+}
+
+.contenedor2 .caja {
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+
+.azul{
+    background: steelblue;
+    z-index: 1;
+}
+
+.verde{
+    background-color: aquamarine;
+    left: 50px;
+    bottom: 80px;
+    z-index: 0;
+}

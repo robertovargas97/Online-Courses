@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="DOM/estilos.css">
+    </head>
+    <body>
+
+
+        <!--Basic events model-->
+        <button onclick="addBox()">addBox</button>
+        <button id="standard">Standard addBox</button>
+        <input type="text" name="quantity" id="q">
+
+        <script>
+        function addBox() {
+            var quantity = document.getElementById('q').value;
+            for (var i = 0;i<quantity;i++){
+                var newBox = document.createElement('div');
+                newBox.textContent = 'Yeiii, I was added';
+                newBox.className = 'box';
+                document.body.appendChild(newBox);
+            }
+        }
+
+        var standarBtn = document.getElementById('standard');
+        var message = 'Yeah, I can do it';
+        standarBtn.addEventListener('click',function (e) {addBox(message)},true);
+
+
+
+    </script>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+.caja {
+  width: 200px;
+  height: 200px;
+  background: rgb(1, 149, 149);
+  /*transform: translate(200px,50px);*/
+  /*transform: scale(2,2);*/
+  /*transform: rotate(10deg);*/
+  /*transform: skew(20deg);*/
+  transform: translate(200px) scale(1.25) rotate(15deg);
+}
+
+/*
+Con transform puedo:
+-Trasladar elementos.
+-Escalar elementos
+-Rotar elementos.
+-Sesgar elementos.
+*/

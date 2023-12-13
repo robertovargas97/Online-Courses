@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000500;
+}
+
+.galeria {
+  width: 100%;
+}
+
+.galeria img {
+  vertical-align: top;
+  width: 300px;
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid #484848;
+  opacity: 0.5;
+  transition: 0.2s ease-out;
+}
+
+.galeria img:hover {
+  opacity: 1;
+  transition: 0.2s ease-in;
+  border-color: #fff;
+  transform: scale(1.05);
+}
+

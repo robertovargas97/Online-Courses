@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <p id="pa"></p>
+
+        <script>
+            //setTimeout()
+
+            function helloWorld() {
+                alert("Hello world");
+            }
+
+           var time =  setTimeout(helloWorld,3000);
+            clearTimeout(time);
+
+            //setINterval()
+            // var interval = setInterval(helloWorld,2000);
+            //clearInterval(interval);
+
+
+            //FECHAS
+           /* var fecha= new Date();
+            document.write(fecha);
+            document.write(fecha.getHours() - 12 );
+            document.write(fecha.getMinutes());
+            document.write(fecha.getDay());
+            document.write(fecha.getFullYear());*/
+
+function date() {
+    var date = new Date();
+    document.getElementById("pa").innerHTML = date;
+}
+
+            var date = setInterval(date,1000);
+            
+
+</script>
+    </body>
+</html>

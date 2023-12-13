@@ -1,0 +1,59 @@
+/*Selector universal*/
+/* * {
+    color: red;
+}*/
+
+/*Selectores de etiqueta */
+h1 {
+  color: tomato;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+p {
+  font-family: "Courier New", Courier, monospace;
+  color: chartreuse;
+  font-weight: bold;
+}
+
+/*Selector desendente */
+div p { 
+    color: teal;
+    font-size: 20px;
+}
+
+div p a{
+    color: red;
+}
+
+/*Selectores por clases */
+.grande{
+    font-size: 30px;
+}
+
+/*Selectores por id,ID ES PARA JAVASCRIPT*/  
+#grande{
+    color: seagreen;
+}
+
+/*Selectores avanzados*/
+
+/* Selector de hijos directos*/
+div > p {
+    font-size: 25px;
+    color: gray;
+}
+
+/*Selector de atributos*/
+input[type]{}
+
+input[type="text"]{}
+
+/*Herencia*/
+body{
+    font-size: 15px;
+    color: aqua;
+}
+
+article{
+    font-size: 16px;
+    color: black;
+}

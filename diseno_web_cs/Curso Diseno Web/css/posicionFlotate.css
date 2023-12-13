@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.cajaPadre {
+  width: 700px;
+  background-color: darkgreen;
+  overflow: hidden;
+}
+.caja {
+  width: 200px;
+  height: 200px;
+  font-size: 35px;
+  background-color: rgba(255, 115, 0, 0.733);
+  margin: 20px;
+  text-align: center;
+  
+}
+
+.uno {
+  float: left;
+  
+}
+
+.dos {
+  float: right;
+}
+
+.articulo{
+    width: 800px;
+    background-color: orchid;
+    padding: 10px;
+}
+
+.articulo img{
+    float: left;
+    margin-right: 10px;
+}

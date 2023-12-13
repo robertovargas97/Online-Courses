@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+header {
+  background: url("/img/bg.jpg"), #019851;
+  background-size: cover;
+  background-position: center 0;
+  background-repeat: no-repeat;
+}
+header .menu-logo-container {
+  padding: 25px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+header .menu-logo-container .logo a {
+  display: block;
+}
+header .menu-logo-container .logo a img {
+  vertical-align: top;
+}
+header .menu-logo-container .menu {
+  text-align: right;
+  line-height: 50px;
+}
+header .menu-logo-container .menu a {
+  color: #fff;
+  margin-left: 50px;
+  font-size: 18px;
+}
+header .text {
+  color: #fff;
+  text-align: center;
+  padding: 200px 0;
+}
+header .text .first-line,
+header .text .second-line {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+header .text .first-line {
+  font-size: 35px;
+  line-height: 35px;
+  margin-bottom: 30px;
+}
+header .text .second-line {
+  font-size: 25px;
+  line-height: 25px;
+  margin-bottom: 60px;
+}
+header .text .btn-container a {
+  border-radius: 4px;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 12px 0;
+  font-weight: 600;
+  width: 235px;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 10px;
+}
+header .text .btn-container a:hover {
+  background: #fff;
+  color: #4f4f4f;
+}
+
+.main .characteristics {
+  padding: 70px 0;
+}
+.main .characteristics .title {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 32px;
+  color: #000;
+  margin-bottom: 70px;
+}
+.main .characteristics .charactistic {
+  text-align: center;
+}
+.main .characteristics .charactistic .icon {
+  vertical-align: top;
+  margin-bottom: 30px;
+}
+.main .characteristics .charactistic .first-line {
+  font-weight: 700;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+.main .characteristics .charactistic .paragraph {
+  margin-bottom: 30px;
+  line-height: 30px;
+}
+.main .photos {
+  background: #000;
+  color: #fff;
+  padding: 60px 0;
+}
+.main .photos .photo {
+  margin-bottom: 20px;
+}
+.main .photos .photo .thumb img {
+  border: 1px solid #fff;
+  border-radius: 3px;
+  width: 100%;
+  vertical-align: top;
+}
+.main .photos .photo .title {
+  margin-top: 70px;
+  margin-bottom: 40px;
+  line-height: 32px;
+  font-size: 32px;
+  font-weight: 300;
+}
+.main .photos .photo .blue {
+  color: #4facd3;
+}
+.main .photos .photo .orange {
+  color: #ddb146;
+}
+.main .photos .photo .paragraph {
+  line-height: 28px;
+}
+.main .photos .photo .rigth {
+  text-align: right;
+}
+.main .clients {
+  background: #2d353e;
+  color: #fff;
+  padding: 50px 0;
+}
+.main .clients .title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 300;
+  font-size: 32px;
+}
+.main .clients .client {
+  text-align: center;
+}
+.main .clients .client a {
+  display: block;
+}
+.main .prices {
+  padding: 70px 0;
+  background: url("/img/precios-bg.jpg"), #727171;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+.main .prices .title {
+  text-align: center;
+  margin-bottom: 70px;
+  font-weight: 300;
+  font-size: 32px;
+  color: #fff;
+}
+.main .prices .plan {
+  background: #fff;
+  text-align: center;
+  padding: 50px 0;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+}
+.main .prices .name {
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.main .prices .plan-price {
+  font-weight: 300;
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+.main .prices .plan-characteristics {
+  list-style: none;
+  padding: 0 20px;
+  margin-bottom: 50px;
+}
+.main .prices .plan-characteristics li {
+  font-size: 18px;
+  padding: 15px 0;
+  border-bottom: 1px solid #dedede;
+}
+.main .prices .green .name,
+.main .prices .green .plan-price {
+  color: #86b773;
+}
+.main .prices .green .btn {
+  font-size: 16px;
+  display: inline-block;
+  width: 70%;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 100px;
+  color: #86b773;
+  border: 2px solid #86b773;
+}
+.main .prices .green .btn:hover {
+  background-color: #86b773;
+  color: #fff;
+}
+.main .prices .active {
+  background: #4c8dc3;
+  color: #fff;
+}
+.main .prices .active .btn {
+  font-size: 16px;
+  display: inline-block;
+  width: 70%;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 100px;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.main .prices .active .btn:hover {
+  background-color: #fff;
+  color: #4c8dc3;
+}
+.main .prices .orange .name,
+.main .prices .orange .plan-price {
+  color: #ddb146;
+}
+.main .prices .orange .btn {
+  font-size: 16px;
+  display: inline-block;
+  width: 70%;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 100px;
+  color: #ddb146;
+  border: 2px solid #ddb146;
+}
+.main .prices .orange .btn:hover {
+  background-color: #ddb146;
+  color: #fff;
+}
+.main .reviews {
+  padding: 70px 0;
+}
+.main .reviews .title {
+  text-align: center;
+  margin-bottom: 70px;
+  font-weight: 300;
+  font-size: 32px;
+  color: #4facd3;
+}
+.main .reviews .client {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.main .reviews .client .photo {
+  width: 20%;
+  float: left;
+  text-align: right;
+}
+.main .reviews .client .photo img {
+  max-width: 100px;
+  width: 100%;
+  vertical-align: top;
+  border-radius: 100%;
+}
+.main .reviews .client .review {
+  float: left;
+  width: 80%;
+  padding: 0 30px;
+  margin-top: 20px;
+}
+.main .reviews .client .review .text {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 10px;
+}
+.main .reviews .client .review .name {
+  color: #ddb146;
+  font-size: 14px;
+}
+.main .reviews .client .rigth .photo {
+  float: right;
+  text-align: right;
+}
+.main .reviews .client .rigth .review {
+  float: right;
+  text-align: right;
+}
+
+footer .address {
+  background: #3c4045;
+  padding: 30px 0;
+  color: #fff;
+}
+footer .address .title {
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 300;
+}
+footer .address .street {
+  margin-bottom: 10px;
+}
+footer .social {
+  text-align: center;
+  padding: 20px 0;
+}
+footer .social a {
+  padding: 10px;
+  display: inline-block;
+  margin: 0 20px;
+  width: 50px;
+  font-size: 22px;
+  color: #fff;
+  background: #000;
+  border-radius: 100px;
+}
+footer .social a:hover {
+  text-decoration: none;
+}
+footer .social a.facebook {
+  background: #3b5998;
+}
+footer .social a.twitter {
+  background: #55acee;
+}
+footer .social a.youtube {
+  background: #cd201f;
+}
+
+/*# sourceMappingURL=styles.css.map */

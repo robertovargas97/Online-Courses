@@ -1,0 +1,11 @@
+.texto {
+  color: aliceblue;
+  text-shadow: 2px 3px 10px rgb(139, 0, 0);
+}
+
+.caja{
+    width: 200px;
+    height: 200px;
+    background: tomato;
+    box-shadow: 0 5px 3px rgba(25, 15,80, .5);
+}

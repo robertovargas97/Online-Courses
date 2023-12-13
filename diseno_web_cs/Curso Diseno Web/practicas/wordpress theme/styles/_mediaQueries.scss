@@ -1,0 +1,51 @@
+@media screen and (max-width: 768px) {
+    header {
+        .logo {
+            text-align: center;
+        }
+
+        .social-media {
+            display: none;
+        }
+
+        .menu {
+            ul {
+                text-align: center;
+
+                li {
+                    float: none;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    .main {
+        .posts {
+            .post {
+                .info {
+                    .extract {
+                        height: auto !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    footer {
+        .menu {
+            ul {
+                text-align: center;
+
+                li {
+                    float: none;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}

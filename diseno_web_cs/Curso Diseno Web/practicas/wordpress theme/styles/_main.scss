@@ -1,0 +1,162 @@
+.main,
+.sidebar {
+    .section-title {
+        h3 {
+            font-family: $font-family2;
+            font-size: 1.5em;
+            line-height: 1.5em;
+            font-weight: normal;
+            color: $dark_gray;
+            padding-bottom: 0.62em;
+            border-bottom: 4px solid $green;
+            margin-bottom: 1.25em;
+        }
+    }
+}
+
+.main {
+    .section-title > div {
+        padding: 0;
+    }
+
+    .single-post{
+        .categories{
+            margin-bottom: 0.875em;
+        }
+    }
+
+    .posts {
+        .post {
+            margin-bottom: 1.875em;
+            .article-container {
+                background: #fff;
+                box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+
+                .thumb {
+                    img {
+                        width: 100%;
+                        vertical-align: top;
+                        height: auto;
+                    }
+                }
+
+                .info {
+                    padding: 1.25em;
+                    .title {
+                        line-height: 1.125em;
+                        margin-bottom: 1.25em;
+                        font-size: 1.125em;
+                        font-weight: bold;
+
+                        a {
+                            color: $dark_gray;
+                        }
+                    }
+
+                    .date {
+                        color: $light_gray;
+                        font-size: 0.875em;
+                        margin-bottom: 1.25em;
+                    }
+
+                    .extract {
+                        color: $text;
+                        font-size: 1em;
+                        height: 8.125em;
+                        max-height: 8.125em;
+                        line-height: 1.75em;
+                        margin-bottom: 1.25em;
+                        overflow: hidden;
+                        &:hover {
+                            overflow: auto;
+                        }
+                    }
+
+                    .categories {
+                        ul {
+                            list-style: none;
+
+                            li {
+                                display: inline-block;
+                            }
+                        }
+
+                        a {
+                            color: $light_gray;
+                            font-size: 1em;
+                            font-weight: bold;
+                            margin-right: 1.25em;
+
+                            &:hover {
+                                color: $primary_blue;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .pagination {
+        ul {
+            list-style: none;
+            overflow: hidden;
+            margin-bottom: 1.25em;
+            font-size: 1em;
+
+            li {
+                float: left;
+                background: $dark_gray;
+                color: #fff;
+                margin-right: 0.62em;
+                font-size: 1.125em;
+                line-height: 1.25em;
+
+                &.disabled {
+                    padding: 0.62em 0.937em;
+                    font-size: 1.125em;
+                    font-size: 1.125em;
+                }
+                a {
+                    background: $primary_blue;
+                    color: #fff;
+                    line-height: 1.125em;
+                    display: inline-block;
+                    padding: 0.62em 0.937em;
+
+                    &:hover {
+                        background: $secondary_blue;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        .wp-pagenavi {
+            margin-bottom: 1.25em;
+            .pages,
+            span {
+                background: $dark_gray;
+                color: #fff;
+                margin-right: 0.62em;
+                font-size: 1.125em;
+                line-height: 1.125em;
+                padding: 0.62em 0.937em;
+            }
+            a {
+                background: $primary_blue;
+                color: #fff;
+                font-size: 1.125em;
+                display: inline-block;
+                padding: 0.62em 0.937em;
+                margin-right: 0.62em;
+
+                &:hover {
+                    background: $secondary_blue;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

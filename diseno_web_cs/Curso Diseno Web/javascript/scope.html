@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+
+        <script>
+
+        //Varriable local (dentro de funcio)
+            function greeting() {
+                var text = "Hello";
+                alert(text); 
+            }
+
+            function greeting2() {
+                var text2 = "Hello2 JIJI";
+
+                function what() {
+                    console.log(text2);                    
+                }
+                what();
+            }
+
+            //greeting2();
+
+            //VARIABLES GLOBALES
+            var globalVar = "Im global"
+
+            function greeting3() {
+                console.log(globalVar);
+            }
+
+            function greeting4() {
+                message = "Hola"; //Si no tiene la declaracion var se convierte en global aunque este dentro de funcion y parezca local
+            }
+
+            greeting4();
+            alert(message);
+
+            //Funcion autoinvocada (convierte las variables dentro en locales)
+
+            (function() {
+                //Aca dentro va todo mi codigo
+                alert("auto call function");
+            }());
+
+    </script>
+    </body>
+</html>

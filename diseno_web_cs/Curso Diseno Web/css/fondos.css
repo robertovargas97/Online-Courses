@@ -1,0 +1,15 @@
+body {
+  background: url(img/darkness.png);
+  background-attachment: fixed; /*scroll, contain  */
+  background-position: center;
+}
+
+.fondo {
+  height: 600px;
+  width: 600px;
+  background: url(img/landscape-3779159_1920.jpg) #000;
+  background-size: 80%;
+  background-attachment: fixed; /*scroll, contain  */
+  background-position: center;
+  background-repeat: no-repeat;
+}

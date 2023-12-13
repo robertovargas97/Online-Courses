@@ -1,0 +1,22 @@
+body {
+  background: #000; }
+
+.articulo {
+  background: #f33;
+  padding: 20px;
+  width: 500px; }
+  .articulo .titulo {
+    color: aqua;
+    text-align: center; }
+  .articulo .autor {
+    color: chartreuse;
+    font-weight: bold; }
+  .articulo p {
+    color: #fff;
+    font-size: 25px;
+    line-height: 27px; }
+    .articulo p a {
+      text-decoration: underline;
+      color: lightgray; }
+
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,36 @@
+$background: #f2f2f2;
+$primary_blue: #5f6ad4;
+$secondary_blue: #7780da;
+$dark_gray: #3b3b3b;
+$light_gray: #909090;
+$text: #292929;
+$green: #48b04d;
+$font-family: "Open Sans", sans-serif;
+$font-family2: "Oswald", sans-serif;
+$font-size: 16px;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: $background;
+    font-size: $font-size;
+    font-family: $font-family;
+}
+
+.ad {
+    margin-bottom: 1.25em; //20px
+    text-align: center;
+}
+
+a {
+    color: $primary_blue;
+}
+
+@import "header";
+@import "main";
+@import "sidebar";
+@import "footer";
+@import "mediaQueries";

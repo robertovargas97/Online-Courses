@@ -1,0 +1,35 @@
+p::first-letter {
+  color: blueviolet;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+p::first-line {
+  color: yellowgreen;
+}
+
+*::selection {
+  background: rgb(175, 0, 0);
+  color: white;
+}
+
+.caja {
+  background: tomato;
+  height: 150px;
+  width: 150px;
+}
+
+.caja::before {
+    content: 'Antes';
+    display: block;
+}
+
+.caja::after {
+    content: '';
+    width: 50px;
+    height: 50px;
+    display: block;
+    background: turquoise;
+    position: relative;
+    left: 200px;
+}

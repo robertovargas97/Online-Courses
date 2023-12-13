@@ -1,0 +1,70 @@
+// HEADER STYLES
+
+header {
+    .logo {
+        padding-top: 1.25em;
+        padding-bottom: 1.25em;
+
+        a {
+            display: inline-block;
+        }
+    }
+
+    .social-media {
+        text-align: right;
+        line-height: 5em;
+
+        a {
+            border-radius: 50%;
+            width: 2.5em;
+            height: 2.5em;
+            text-align: center; //Line-height igual al width centra el contenido
+            line-height: 2.5em;
+            display: inline-block;
+            background: navy;
+            color: #fff;
+            margin-left: 1.25em;
+
+            &.youtube {
+                background: #c4302b;
+            }
+
+            &.facebook {
+                background: #3b5998;
+            }
+
+            &.instagram {
+                background: #C13584;
+            }
+        }
+    }
+
+    .menu {
+        background: $primary_blue;
+        margin-bottom: 1.25em;
+
+        ul {
+            list-style: none;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+
+            li {
+                
+                float: left;
+               
+
+                a {
+                    color: #fff;
+                    display: inline-block;
+                    padding: 1em 1.25em;
+                    font-size: 0.87em;
+                    &:hover {
+                        text-decoration: none;
+                        background: $secondary_blue;
+                    }
+                }
+            }
+        }
+    }
+}

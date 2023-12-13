@@ -1,0 +1,10 @@
+@font-face{
+    font-family: "Coiny-Regular";
+    src: url("fonts/Coiny-Regular.ttf");
+}
+
+
+body{
+    font-family: Coiny-Regular;
+}
+

@@ -1,0 +1,271 @@
+.main {
+    .characteristics {
+        padding: 70px 0;
+        .title {
+            text-align: center;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300;
+            font-size: 32px;
+            color: #000;
+            margin-bottom: 70px;
+        }
+
+        .charactistic {
+            text-align: center;
+            .icon {
+                vertical-align: top;
+                margin-bottom: 30px;
+            }
+
+            .first-line {
+                font-weight: 700;
+                margin-bottom: 30px;
+                font-size: 20px;
+            }
+
+            .paragraph {
+                margin-bottom: 30px;
+                line-height: 30px;
+            }
+        }
+    }
+
+    .photos {
+        background: #000;
+
+        color: #fff;
+        padding: 60px 0;
+
+        .photo {
+            margin-bottom: 20px;
+
+            .thumb {
+                img {
+                    border: 1px solid #fff;
+                    border-radius: 3px;
+                    width: 100%;
+                    vertical-align: top;
+                }
+            }
+
+            .title {
+                margin-top: 70px;
+                margin-bottom: 40px;
+                line-height: 32px;
+                font-size: 32px;
+                font-weight: 300;
+            }
+
+            .blue {
+                color: #4facd3;
+            }
+
+            .orange {
+                color: #ddb146;
+            }
+
+            .paragraph {
+                line-height: 28px;
+            }
+
+            .rigth {
+                text-align: right;
+            }
+        }
+    }
+
+    .clients {
+        background: #2d353e;
+        color: #fff;
+        padding: 50px 0;
+
+        .title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-weight: 300;
+            font-size: 32px;
+        }
+
+        .client {
+            text-align: center;
+
+            a {
+                display: block;
+            }
+        }
+    }
+
+    .prices {
+        padding: 70px 0;
+        background: url("/img/precios-bg.jpg"), #727171;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center 0;
+
+        .title {
+            text-align: center;
+            margin-bottom: 70px;
+            font-weight: 300;
+            font-size: 32px;
+            color: #fff;
+        }
+
+        .plan {
+            background: #fff;
+            text-align: center;
+            padding: 50px 0;
+            box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+        }
+
+        .name {
+            font-size: 32px;
+            line-height: 32px;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+
+        .plan-price {
+            font-weight: 300;
+            font-size: 48px;
+            margin-bottom: 40px;
+        }
+        .plan-characteristics {
+            list-style: none;
+            padding: 0 20px;
+            margin-bottom: 50px;
+
+            li {
+                font-size: 18px;
+                padding: 15px 0;
+                border-bottom: 1px solid #dedede;
+            }
+        }
+
+        .green {
+            .name,
+            .plan-price {
+                color: #86b773;
+            }
+
+            .btn {
+                font-size: 16px;
+                display: inline-block;
+                width: 70%;
+                padding: 10px 0;
+                text-align: center;
+                border-radius: 100px;
+                color: #86b773;
+                border: 2px solid #86b773;
+
+                &:hover {
+                    background-color: #86b773;
+                    color: #fff;
+                }
+            }
+        }
+
+        .active {
+            background: #4c8dc3;
+            color: #fff;
+
+            .btn {
+                font-size: 16px;
+                display: inline-block;
+                width: 70%;
+                padding: 10px 0;
+                text-align: center;
+                border-radius: 100px;
+                color: #fff;
+                border: 2px solid #fff;
+
+                &:hover {
+                    background-color: #fff;
+                    color: #4c8dc3;
+                }
+            }
+        }
+
+        .orange {
+            .name,
+            .plan-price {
+                color: #ddb146;
+            }
+
+            .btn {
+                font-size: 16px;
+                display: inline-block;
+                width: 70%;
+                padding: 10px 0;
+                text-align: center;
+                border-radius: 100px;
+                color: #ddb146;
+                border: 2px solid #ddb146;
+
+                &:hover {
+                    background-color: #ddb146;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .reviews {
+        padding: 70px 0;
+
+        .title {
+            text-align: center;
+            margin-bottom: 70px;
+            font-weight: 300;
+            font-size: 32px;
+            color: #4facd3;
+        }
+
+        .client {
+            overflow: hidden;
+            margin-bottom: 20px;
+
+            .photo {
+                width: 20%;
+                float: left;
+                text-align: right;
+
+                img {
+                    max-width: 100px;
+                    width: 100%;
+                    vertical-align: top;
+                    border-radius: 100%;
+                }
+            }
+
+            .review {
+                float: left;
+                width: 80%;
+                padding: 0 30px;
+                margin-top: 20px;
+
+                .text {
+                    font-size: 18px;
+                    line-height: 28px;
+                    margin-bottom: 10px;
+                }
+
+                .name {
+                    color: #ddb146;
+                    font-size: 14px;
+                }
+            }
+
+            & .rigth {
+                .photo {
+                    float: right;
+                    text-align: right;
+                }
+
+                .review {
+                    float: right;
+                    text-align: right;
+                }
+            }
+        }
+    }
+}

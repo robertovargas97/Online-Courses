@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous">
+
+        <style>
+                .containerm{
+                    margin-bottom: 70px;
+                    background: #e8e8e8;
+                    color: #fff;
+                }
+
+                .containerm div{
+                    background: #4f5ef5;
+                    padding: 20px;
+                    border: 1px solid rgba(255, 255, 255, .25);
+                }
+            </style>
+    </head>
+    <body>
+
+
+        <div class="container">
+
+            <!-- SE PUEDE UTILIZAR COMO CON EL GRID d-sm-flex 
+                                                    d-md-inline-flez 
+            -->
+            <div class="row mt-3">
+                <div class="col">
+                    <h4>Display Flex types</h4>
+                    <hr>
+
+                    <!-- Abarca todo el espacio -->
+                    <div class="d-flex bg-primary text-white p-3">
+                        <p class="mb-0">Display Flex <strong>.d-flex</strong></p>
+                    </div>
+
+                    <!-- Abarca solo el espacio que se necesita -->
+                    <div class="d-inline-flex bg-primary text-white p-3 mt-4">
+                        <p class="mb-0">Display Inline Flex <strong>.d-inline-flex</strong></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row my-4">
+                <div class="col">
+                    <h4>Direction</h4>
+                    <hr>
+
+                    <p>Flex-row</p>
+                    <div class="containerm d-flex flex-row">
+                        <div class="caja">
+                            Caja 1
+                        </div>
+                        <div class="caja">
+                            Caja 2
+                        </div>
+                        <div class="caja">
+                            Caja 3
+                        </div>
+                    </div>
+
+                    <p>flex-row-reverse</p>
+                    <div class="containerm d-flex flex-row-reverse">
+                        <div class="caja">
+                            Caja 1
+                        </div>
+                        <div class="caja">
+                            Caja 2
+                        </div>
+                        <div class="caja">
+                            Caja 3
+                        </div>
+                    </div>
+
+                    <!-- SE PUEDE UTILIZAR COMO CON EL GRID flex-sm-column-->
+                    <p>flex-column</p>
+                    <div class="containerm d-flex flex-column">
+                        <div class="caja">
+                            Caja 1
+                        </div>
+                        <div class="caja">
+                            Caja 2
+                        </div>
+                        <div class="caja">
+                            Caja 3
+                        </div>
+                    </div>
+
+                    <p>flex-column-reverse</p>
+                    <div class="containerm d-flex flex-column-reverse">
+                        <div class="caja">
+                            Caja 1
+                        </div>
+                        <div class="caja">
+                            Caja 2
+                        </div>
+                        <div class="caja">
+                            Caja 3
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- SE PUEDE UTILIZAR COMO CON EL GRID justify-content-sm-start-->
+            <div class="row my-4">
+                <div class="col">
+                    <h4>Justify content</h4>
+                    <hr>
+
+                    <p>justify-content-start</p>
+                    <div class="containerm d-flex justify-content-start">
+                        <div>
+                            Caja 1
+                        </div>
+                        <div>
+                            Caja 2
+                        </div>
+                        <div>
+                            Caja 3
+                        </div>
+                    </div>
+
+                    <p>justify-content-center</p>
+                    <div class="containerm d-flex justify-content-center">
+                        <div>
+                            Caja 1
+                        </div>
+                        <div>
+                            Caja 2
+                        </div>
+                        <div>
+                            Caja 3
+                        </div>
+                    </div>
+
+                    <p>justify-content-end</p>
+                    <div class="containerm d-flex justify-content-end">
+                        <div>
+                            Caja 1
+                        </div>
+                        <div>
+                            Caja 2
+                        </div>
+                        <div>
+                            Caja 3
+                        </div>
+                    </div>
+
+                    <p>justify-content-between</p>
+                    <div class="containerm d-flex justify-content-between">
+                        <div>
+                            Caja 1
+                        </div>
+                        <div>
+                            Caja 2
+                        </div>
+                        <div>
+                            Caja 3
+                        </div>
+                    </div>
+
+                    <p>justify-content-around</p>
+                    <div class="containerm d-flex justify-content-around">
+                        <div>
+                            Caja 1
+                        </div>
+                        <div>
+                            Caja 2
+                        </div>
+                        <div>
+                            Caja 3
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+    </body>
+</html>

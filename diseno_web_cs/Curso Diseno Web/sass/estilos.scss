@@ -1,0 +1,29 @@
+body {
+  background: #000;
+}
+
+.articulo {
+  background: #f33;
+  padding: 20px;
+  width: 500px;
+
+  .titulo {
+    color: aqua;
+    text-align: center;
+  }
+
+  .autor {
+    color: chartreuse;
+    font-weight: bold;
+  }
+
+  p {
+    color: #fff;
+    font-size: 25px;
+    line-height: 27px;
+    a {
+      text-decoration: underline;
+      color: lightgray;
+    }
+  }
+}

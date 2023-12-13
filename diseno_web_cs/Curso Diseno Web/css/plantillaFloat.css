@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(219, 219, 219);
+}
+
+.contenedor {
+  width: 1000px;
+  background: rgb(255, 229, 229);
+  margin: 20px auto;
+}
+
+header {
+  background: rgb(92, 224, 150);
+  color: white;
+  padding: 20px;
+}
+
+.main {
+  background: white;
+  padding: 20px;
+  width: 700px;
+  float: left;
+}
+
+aside {
+  background: rgb(255, 236, 154);
+  padding: 20px;
+  width: 300px;
+  float: left;
+}
+
+footer {
+  clear: both;
+  background: rgb(100, 100, 100);
+  padding: 20px;
+  color: white;
+}
