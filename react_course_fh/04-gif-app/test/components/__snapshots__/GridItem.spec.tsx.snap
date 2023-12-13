@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GridItem> Component Test Suite should match the snapshoop 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <img
+      alt="Saitma"
+      data-testid="gif"
+      src="https://one-punch.com/"
+    />
+    <p
+      data-testid="image-title"
+    >
+      Saitma
+    </p>
+  </div>
+</div>
+`;
