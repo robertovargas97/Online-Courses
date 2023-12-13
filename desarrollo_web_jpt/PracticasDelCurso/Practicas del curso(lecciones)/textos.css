@@ -1,0 +1,63 @@
+/*Font Face con la pagina font squirrel*/
+@font-face {
+    font-family: '3dumbregular';
+    src: url('3dumb.woff2') format('woff2'),
+         url('3dumb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+p.oferta{
+    text-decoration: line-through;
+    font-weight: bold;
+    text-align: justify;
+}
+
+/*Font Family*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    font-family: '3dumbregular', Geneva, Tahoma, sans-serif;
+    color: darkred;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+h3{
+    font-family: "Times New Roman", serif;
+    font-style: italic;
+    font-variant: small-caps;
+    text-align: center;
+}
+
+p{
+    font-family: Geneva,Verdana,sans serif;
+    font-size: 18px;
+    text-transform: capitalize;
+    line-height: 30px;
+     text-indent: 30px;
+}
+
+div.o h2{
+    height: 50px;
+    background-color: aquamarine;
+    line-height: 50px;
+}
+
+ol#min li{
+    text-transform: lowercase;
+}
+
+p#ja{
+    font-variant: small-caps!important;
+    text-align: justify;
+    
+}

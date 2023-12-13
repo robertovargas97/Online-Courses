@@ -1,0 +1,261 @@
+/*Selectores con elementos HTML*/
+body{
+background: lightgray;
+}
+
+h2{
+    color: orangered;
+    font-family: "Century Gothic";
+    text-transform: uppercase;
+}
+h3{
+    color: green;
+}
+
+p{
+    font-size: 18x;
+}
+
+header{
+
+    background: url(./img/css3.png) ;
+    margin: 0 0 20px 0;
+    padding: 10px 0;
+    position: fixed;
+    left:0;
+    width: 100%;
+    top:0;
+    background-repeat: repeat-x;
+    background-size: 80px;
+background-position: top right;
+}
+section#cursos{
+    border: 1px dashed black; 
+   
+}
+div.contenedor{
+    margin-top: 12%;
+}
+div.contenido{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img{
+    height: 100px;
+}
+
+/*Selectores de Id*/
+#titulo{
+    color: orangered;
+}
+
+#logo{
+    margin-top: 10px;
+    
+}
+
+/*Selectores de clases*/
+
+.rojo{
+    color:darkcyan;
+}
+
+/*Selectores con clases i Id*/
+
+#titulo.titulo{
+    font-size: 50px;
+}
+
+/*Selectores con dos clases*/
+
+.azul.titulo-Curso{
+    color: blue;
+}
+/*Selectores con etiqueta y Id*/
+img#logo{
+    height: 40px;
+}
+
+h2#titulo{
+    color:lawngreen ;
+}
+
+/*Selectores con etiqueta y clase*/
+
+section.seccion{
+    background: firebrick;
+}
+
+div.noticia{
+    background: rebeccapurple;
+}
+
+/*Selector universal*/
+/**{
+    color:seagreen!important;
+}*/
+
+#listaC *{
+    color: black;
+    font-family: fantasy;
+    font-size: 20px;
+}
+
+/*Seleccionando grupos*/
+h2,h3,p,a{
+    text-transform: uppercase;
+}
+
+h2,h3{
+    text-align: center;
+}
+
+/*Selector desendiente*/
+
+nav{
+    background-color: tomato!important;
+    padding: 20px 0;
+}
+
+nav#navegacion ul{
+    list-style: none ;
+}
+nav#navegacion ul li{
+    margin-right: 20px;
+    float: left;
+}
+
+nav#navegacion ul li a {
+    color: black;
+}
+
+/*Selector con hijos*/
+
+section#cursos:first-child ul#listaC{
+    border: 2px solid black;
+}
+
+/*Selector de adyacentes ,se coloca la etiqueta siguiente*/
+ul#listaC + p{
+background-color: rgb(12, 85, 85)!important;
+
+color: white;}
+
+/*Seleccionar por enlaces*/
+ a[href*="facebook.com"]{
+     background-color: lime;
+ }
+
+ a[href*="google.com"]{
+    background-color: lime;
+}
+
+/*Seleccionar por atributos*/
+img[id="Ht"]{
+   margin-left: 100px;
+}
+
+[class="seccion"]{
+    background-color: goldenrod!important;
+}
+
+/*Selectores con pseudo clases*/
+div.menu nav ul li a:focus,
+div.menu nav ul li a:visited,
+div.menu nav ul li a:active,
+{
+    color: black;
+}
+
+div.menu nav ul li:first-child a{
+    text-decoration: none;
+}
+
+div.menu nav ul li a:hover{
+    color: orangered;
+}
+
+h2:hover{
+    color: aqua;
+}
+
+/*Selectores con pseudo clases y NTH-CHILD*/
+
+div.menu nav ul li:nth-child(4) a{
+   background-color: royalblue; ;
+}
+
+div.menu nav ul li:nth-child(2) a{
+    background-color:yellowgreen; ;
+ }
+
+ table tbody tr:nth-child(odd){
+     background-color: chocolate;
+ }
+
+ table tbody tr:nth-child(even){
+    background-color: hotpink ;
+}
+
+table#tabla{
+    border: 5px double black; 
+    float: right;
+}
+
+main{
+    width: 700px;
+    float: left;
+}
+aside{
+width: 300px;
+float: right;
+}
+
+.clearFix:before, .clearFix:after{
+content: '';
+display: table;
+}
+
+.clearFix:after{
+    clear: both;
+}
+
+div.padre{
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+div.hijo{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: -208px;
+}
+
+.rojo{
+    background-color:green;
+    border-radius: 150px 150px 150px 150px;
+
+}
+
+.azul{
+    background-color: blue;
+}
+
+.promo{
+display: table;
+width: 100%;
+background: url(./img/html5.png), url(./img/css3.png);
+height: 300px;
+background-position: top center , bottom center;
+background-repeat: no-repeat;
+background-size: 80px;
+}
+
+.texto{
+display: table-cell;
+text-align: center;
+vertical-align: middle;
+}

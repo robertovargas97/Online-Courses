@@ -1,0 +1,238 @@
+html {
+  box-sizing: border-box;
+  }
+  
+*,*:before,*:after{ /**Evitará que los elementos crezcan mas de lo que les pongo**/
+    box-sizing: inherit;
+  }
+
+*{
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+body{
+  font-family: "Century Gothic";
+}
+
+header{
+  background-color: white;
+  height: 90px;
+   /* position: fixed;*/
+    left:0;
+    width: 100%;
+    top:0;
+   padding: 2% 0;
+}
+
+div.contenedor{
+  width: 100%;
+  margin: 0 auto;
+  
+}
+
+.logo img{
+  height: 40px;
+  margin-left: 50px;
+}
+
+
+div.contenedormain{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/**Navegacion**/
+
+.navegacion{
+  margin-top: 5px;/*Cambiar a 80px si se quiere fixed en navegacion*/
+  background-color: rgb(0, 132, 255);
+ /* position: fixed;*/
+  left:0;
+  width: 100%;
+  top:0;
+}
+
+ nav{
+   width: 1200px;
+   margin: 0 auto;
+   position: relative;
+ }
+
+ nav ul{
+   list-style: none;
+ }
+
+ nav > ul > li{
+   float: left;
+ }
+
+ /**Clear del Nav**/
+ nav ul::after{
+   content: '';
+   display:block;
+   clear: both; 
+ }
+
+ nav ul li a{
+   display: inline-block;
+   width:200px;
+   color: whitesmoke;
+   text-decoration: none;
+   text-align: center;
+   padding:8px 0;
+
+ }
+
+ nav ul li a:hover{
+  background-color: rgba(0, 184, 228, 1);
+   transition: background .2s;
+ }
+
+ /**Segundo Nivel del Nav **/
+ nav ul ul{
+   position: absolute;
+   top: 100%;
+   background-color: rgb(0, 132, 255);
+   display: none;
+ }
+
+ nav ul li:hover > ul{
+   display: block;
+ }
+
+ nav ul li:hover{
+  background-color: rgba(0, 184, 228, 1);
+ }
+
+ /**Contenido principal**/
+
+ div.contenido::after{
+  content:'';
+  display: block;
+  clear: both;
+ }
+
+ main{
+  margin-top: 5px; /*Cambiar a 150 si se quiere fixed en navegacion*/
+  width: 70%;
+  float: left;
+  padding-right: 60px;
+ }
+
+ /**Entradas de post**/
+ article{
+   margin-top: 30px;
+}
+
+h2{
+  color:rgb(0, 132, 255);
+  margin-bottom: 15px;
+}
+
+article img{
+  float:left;
+  width: 230px;
+  margin-right: 40px;
+}
+
+article p{
+  line-height: 2;
+  text-align: justify;
+}
+
+
+ .boton{
+   background-color: rgb(0, 132, 255);
+   padding: 10px 20px;
+   display: inline-block;
+   margin-top: 10px;
+   text-decoration: none;
+   text-transform: uppercase;
+   color: white;
+   font-weight: bold;
+   border-radius: 4px;
+    }
+
+
+  /** Side Bar**/  
+  aside{
+      float: right;
+      width: 30%;
+      margin-top: 50px; /*Cambiar a 188 si se quiere fixed en navegacion*/
+     }
+    
+.sidebar ul li{
+    list-style: none;
+    padding: 8px;
+  }
+
+.sidebar ul li a{
+  color: rgb(0, 132, 255);
+  text-decoration: none;
+}
+
+.sidebar ul li:hover{
+ background-color: white;
+ border: 2px solid rgb(0, 132, 255);
+ border-radius: 4px;
+ cursor: pointer;
+}
+
+.sidebar ul li:active{
+  transform: scale(0.9);
+}
+
+/**Footer**/
+
+footer{
+  background-color : rgb(0, 132, 255);
+  padding-top: 25px;
+  margin-top: 80px;  
+
+}
+
+footer h2{
+  color:white;
+}
+
+footer div.nosotros{
+  float: left;
+  width: 50%;
+  color: white;
+}
+
+footer div.nosotros p{
+font-size: 15px;
+}
+
+footer div.menu{
+  float: right;
+  width: 30%;
+}
+
+footer .contenedormain::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+footer nav{
+  width: auto;
+}
+
+footer nav ul li a{
+  padding: 2px 8px;
+  width: auto;
+  font-size: 13px;
+  text-align: center;
+}
+
+p.copy{
+  margin-top: 20px; 
+  padding: 20px 0;
+  text-align: center;
+  color: #ffffff;
+  font-size: 12px;
+}

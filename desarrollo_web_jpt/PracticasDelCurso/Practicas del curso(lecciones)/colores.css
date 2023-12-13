@@ -1,0 +1,65 @@
+body{
+    background-color: chartreuse;
+}
+
+.contenedor{
+    margin: 0 auto;
+    background-color:white;
+ width: 1000px;
+}
+
+img#logo{
+    
+}
+
+nav ul li a{
+    color:#369CD6;
+}
+
+section#noticias{
+    background-color: rgb(242, 242, 242)
+}
+
+nav{
+    background-color: rgb(53, 53, 53)
+}
+
+/** RGBA Y HSLA*/
+
+#noticias h2{
+    background-color: rgba(254, 73, 24, .4);
+    padding: 10px;
+    color: white;
+    border-bottom: 10px solid rgb(247, 73, 1);
+}
+
+/***TEXT SHADOW Y BOX SHADOW**/
+
+h2{
+    text-shadow: 10px 5px 10px black;
+}
+
+ul#este{
+    box-shadow: 0px 10px 15px 5px black;
+}
+
+/**Degradado**/
+
+#cursos{
+background: linear-gradient(gray,rgb(247, 73, 1));
+
+background: linear-gradient(to right, gray,rgb(247, 73, 1));
+
+background: linear-gradient(to left, gray,rgb(247, 73, 1));
+
+background: linear-gradient(to bottom, gray,rgb(247, 73, 1));
+
+background: linear-gradient(125deg, gray,rgb(247, 73, 1));
+
+background: radial-gradient(gray,rgb(247, 73, 1));
+
+background: radial-gradient(gray 10%,rgb(247, 73, 1)20%);
+
+
+
+}

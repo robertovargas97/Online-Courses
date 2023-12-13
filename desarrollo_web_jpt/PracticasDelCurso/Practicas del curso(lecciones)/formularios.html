@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formularios</title>
+</head>
+
+<body>
+
+    <h2>Creando Formularios</h2>
+
+    <!--Formulario-->
+    <form class="formulario">
+
+        <!--Agrupa informacion parecida-->
+        <fieldset>
+            <!--Titulo del fieldset-->
+            <legend>Tus datos</legend>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" autocomplete="off" required>
+
+            <br>
+            <br>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" autocomplete="off" required>
+            <br>
+            <br>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" name="correo" id="correo" placeholder="correo@dominio.com" required>
+            <br>
+            <br>
+            <label for="sitio">Tu sitio Web:</label>
+            <input type="url" name="sitio" id="sitio" placeholder="http://www.dominio.com">
+
+            <br>
+            <br>
+
+            <label for="fecha"> Fecha de cumpleaños: </label>
+            <input type="date" name="fecha" id="fechs"> Fecha de cumpleaños:
+
+
+            <br>
+            <br>
+
+            <label for="correo">Cuanto sabes de HTML:</label>
+            <input type="range" name="rango" id="rango" min="0" max="10">
+
+            <br>
+
+            <label for="sexo">Sexo</label>
+            <br>
+
+            <input type="radio" id="sexo" name="sexo" value="Hombre" autofocus>Hombre
+            <br>
+
+            <input type="radio" id="sexo" name="sexo" value="Mujer">Mujer
+            <br>
+
+            <input type="radio" id="sexo" name="sexo" value="Otro">Otro
+
+        </fieldset>
+        <br>
+        <br>
+
+        <fieldset>
+            <legend>informacion sobe tu curso</legend>
+
+            <label for="turno"> Turno: </label>
+
+            <!--Para seleccionar varias opciones-->
+            <select id="turno" class="turno" name="turno">
+                <option value="Matutino">Matutino</option>
+                <option value="despertino" selected> Despertino</option>
+                <option value="nocturno">Nocturno</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label for="encuesta">Que curso te gustaria que se añadiera</label>
+            <input list="propuesta" name="encuesta" id="encuesta">
+            <datalist id="propuesta">
+                <option value="jQuery"></option>
+                <option value="Aplicaciones Web"></option>
+                <option value="Bootstrap"></option>
+            </datalist>
+
+            <br>
+            <br>
+            <label for="cur">Elige tus cursos:</label>
+            <br>
+            <input type="checkbox" name="cur" id="HTML" value="HTML"> HTML
+            <br>
+            <input type="checkbox" name="cur" id="PHP" value="PHP"> PHP
+            <br>
+            <input type="checkbox" name="cur" id="MYSQL" value="MYSQL">MYSQL
+            <br>
+
+            <label for="fechaCursos"> Fecha que deseas para iniciar: </label>
+            <input type="month" name="fechaCursos" id="fechaCursos">
+            <input type="time" name="hora" id="hora">
+            <input type="week" name="semana" id="semana">
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Extra</legend>
+            <label>Las primeras 10 reciben camisa</label> &nbsp;
+            <input type="color" name="color ">
+            <br>
+            <br>
+            <label for="cantidad">Cantidad</label>
+            <input type="number" name="cantidad" id="cantidad" min="0" max="10">
+
+        </fieldset>
+        <br>
+        <br>
+
+        <fieldset>
+            <legend>Usuario y contraseña</legend>
+
+            <label for="usuario">Usuario</label>
+            <input type="text" name="usuario" id="usuario" placeholder="Usuario" required>
+            <br>
+            <br>
+            <label for="clave">Clave</label>
+            <input type="password" name="clve" id="clave" placeholder="Clave" required>
+
+        </fieldset>
+
+        <br>
+        <button type="reset"> Borrar</button>
+        <input type="submit" value="Enviar">
+        <br>
+
+
+    </form>
+</body>
+
+</html>

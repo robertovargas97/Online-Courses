@@ -1,0 +1,50 @@
+/*Back Grounds*/
+
+body{
+    background: lightgreen;
+
+}
+
+div.contenedor{
+    background: rgb(255, 255, 255);
+    width: 1000px;
+    margin: 20px auto 0 auto;
+    overflow: hidden;
+}
+
+header{
+    background: darkorange;
+   padding: 20px 0 20px 0;
+}
+
+nav ul{
+    padding: 0;
+}
+
+nav{
+    background: hotpink;
+    height: 80px;
+    margin-top: 60px;
+}
+
+table{
+    background-color: transparent;
+    margin-left: 60px;
+    margin-bottom: 40px;
+}
+
+tbody tr td{
+    padding: 5px 0;
+}
+
+footer{
+    background: lightblue;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    padding-top: 20px;
+}
+
+footer nav{
+    background: red;
+   
+}

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="Normalize.css">
+
+    <link rel="stylesheet" href="contenedores.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="o">
+        <h2>Vence en dos dias</h2>
+    </div>
+    <div class="contenedor">
+
+        <!--Encabezado-->
+        <header role="banner">
+            <div class="logo">
+                <img src="img/logo.png" height="100" alt="logo css" id="logo">
+
+            </div>
+        </header>
+
+        <nav role="navigation" id="navegacion">
+
+            <!--Lista no ordenada  con referecnias-->
+            <ul>
+                <li>
+                    <a href="nosotros.html">Sobre Nosotros</a>
+                </li>
+                <li>
+                    <a href="#cursos">Cursos</a>
+                </li>
+                <li>
+                    <!--Target para mantener en mi pagina-->
+                    <a href="http://google.com" target="_blank">Google</a>
+                </li>
+                <li>
+                    <a href="#noticias">Noticias</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!--CONTENIDO PRINCIPAL-->
+        <main class="contenido-principal" role="main">
+            <section id="Introduccion" class="seccion">
+                <h2 id="titulo" class="titulo">Aprendiendo HTML Y CSS</h2>
+                <p class="rojo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, facilis iure aliquam quo, perferendis
+                    molestiae officiis ad obcaecati exercitationem libero voluptatum dignissimos tempore. Quibusdam quia
+                    tempora eos laborum repudiandae dolor.</p>
+            </section>
+
+            <section id="cursos" class="seccion">
+                <h2 class="azul titulo-Curso">Nuestros cursos</h2>
+                <div>
+                    <h3>HTML5</h3>
+                    <img src="img/html5.png" alt="html5" height="100px" id="Ht">
+
+                    <p class="oferta">Oferta</p>
+                    <!--Link para descarga de archivos en el sitio-->
+                    <a href="img/html5.png" download>Descargar programa</a>
+                    <p id="ja">Ventajas del curso</p>
+                    <ul id="listaC">
+                        <li>Lo puedes tomar en linea
+                            <ul>
+                                <li>En udemy</li>
+                                <li>A cualquier hora del día</li>
+                            </ul>
+                        </li>
+                        <li>Avanzar a tu ritmo</li>
+                        <li>Puedes preguntar tud dudas al instructor</li>
+
+                    </ul>
+                    <p>No te quedes fuera</p>
+
+                    <a href="http://facebook.com" id="btn">Facebook</a>
+                    <p>Temas del curso</p>
+
+                    <!--Lista Ordenada-->
+                    <ol id="min">
+                        <li>Básicos de HTML</li>
+                        <li>Etiquetas</li>
+                        <li>Enlaces
+                            <ul>
+                                <li>Imagenes</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <p>Lo que debes aprender para ser desarrollador web</p>
+
+                    <!--De definicion-->
+                    <dl>
+                        <dt>HTML</dt>
+                        <dd>Agrega Estructura</dd>
+                        <dt>CSS</dt>
+                        <dd>Agregar presentacion</dd>
+                        <dt>JavaScript</dt>
+                        <dd>Agregar inteligencia</dd>
+
+                    </dl>
+
+                </div>
+
+                <div>
+                    <h3>CSSR</h3>
+                    <img src="img/css3.png" alt="css3" height="100px">
+                </div>
+
+                <div>
+                    <h3>Javascript</h3>
+                    <img src="img/js.jpg" alt="js" height="80px">
+                </div>
+            </section>
+
+            <section id="noticias" class="seccion">
+                <h2>Últimas noticias</h2>
+                <div class="noticia">
+                    <article role="article">
+                        <h3>Aprender a programar en el siglo 21 es muy importante</h3>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, sint distinctio! Ducimus veritatis
+                            nostrum omnis dignissimos qui, id nemo hic quidem ipsam modi obcaecati ad possimus facilis alias
+                            dicta cupiditate.</p>
+                    </article>
+                </div>
+                <article role="article">
+                    <h3>Aprender a programar en el siglo 21 es muy importante</h3>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, sint distinctio! Ducimus veritatis
+                        nostrum omnis dignissimos qui, id nemo hic quidem ipsam modi obcaecati ad possimus facilis alias
+                        dicta cupiditate.</p>
+                </article>
+            </section>
+        </main>
+
+        <!--Parte derecha de la página,Barra lateral-->
+        <aside role="complementary">
+
+            <!--Tabla-->
+            <table width="300">
+                <!--Titulo de la tabla-->
+                <caption>
+                    <h2>Proximos Cursos </h2>
+                </caption>
+                <!--Encabezado de la tabla-->
+                <thead>
+                    <tr>
+                        <th>Curso</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+
+                <!--Pie de la tabla-->
+                <tfoot>
+                    <tr>
+                        <td colspan="2" align="center" class="rojo">No te los puedes perder</td>
+                    </tr>
+                </tfoot>
+
+                <!--Cuerpo de la tabla-->
+                <tbody>
+
+                    <tr>
+                        <td rowspan="2">PHP</td>
+                        <td>$99</td>
+                    </tr>
+
+                    <tr>
+                        <td>$99</td>
+                    </tr>
+
+                    <tr>
+                        <td>MySQL</td>
+                        <td>$99</td>
+                    </tr>
+
+                    <tr>
+                        <td>JS</td>
+                        <td>$99</td>
+                    </tr>
+
+                    <tr>
+                        <td>Python</td>
+                        <td>$99</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </aside>
+    </div>
+
+    <footer role="contentinfo">
+        <div class="nosotros"></div>
+        <h3>Sobre nuestra escuela</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis reprehenderit cumque a alias placeat vero, expedita
+            amet minus ipsum, nesciunt sit velit deleniti rem optio, adipisci veniam commodi illum dicta.</p>
+
+        <div class="menu">
+            <nav class="navegacion" role="navigation">
+                <ul>
+                    <li>
+                        <a href="#logo">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="#Ht">Cursos</a>
+                    </li>
+                    <li>
+                        <a href="#">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <p>Cursos de Diseño Web &ndash; Todos los derechos reservados &copy;</p>
+    </footer>
+
+
+
+</body>
+
+</html>
