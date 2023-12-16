@@ -1,5 +1,3 @@
-console.log("Hello");
-
 type Todo = {
   id: number;
   todo: string;
