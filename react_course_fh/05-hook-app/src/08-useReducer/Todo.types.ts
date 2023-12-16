@@ -1,30 +1,30 @@
 export type OnSubmitFunctionType = (
-  event: React.FormEvent<HTMLFormElement>
-) => void;
+  event: React.FormEvent<HTMLFormElement>,
+) => void
 
 export type Todo = {
-  id: number;
-  description: string;
-  done: boolean;
-};
+  id: number
+  description: string
+  done: boolean
+}
 
 export interface TodoAddPropTypes {
-  onNewTodo: (todo: Todo) => void;
+  onNewTodo: (todo: Todo) => void
 }
 
 export interface TodoItemPropTypes {
-  todo: Todo;
-  onDeleteTodo: (id: number) => void;
-  onToggleTodo: (id: number) => void;
+  todo: Todo
+  onDeleteTodo: (id: number) => void
+  onToggleTodo: (id: number) => void
 }
 
 export interface TodoListPropTypes {
-  todos: Todo[];
-  onDeleteTodo: (id: number) => void;
-  onToggleTodo: (id: number) => void;
+  todos: Todo[]
+  onDeleteTodo: (id: number) => void
+  onToggleTodo: (id: number) => void
 }
 
 export type TodoAction = {
-  type: string;
-  payload: Todo;
-};
+  type: string
+  payload: Todo
+}

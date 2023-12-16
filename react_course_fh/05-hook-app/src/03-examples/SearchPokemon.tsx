@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react'
 
 interface SearchPokemonPropsType {
-  pokemonId: string;
-  onInputChange: React.ChangeEventHandler<HTMLInputElement> | undefined;
-  searchPokemon: () => void;
+  pokemonId: string
+  onInputChange: React.ChangeEventHandler<HTMLInputElement> | undefined
+  searchPokemon: () => void
 }
 
 export const SearchPokemon: React.FC<SearchPokemonPropsType> = ({
@@ -34,7 +34,7 @@ export const SearchPokemon: React.FC<SearchPokemonPropsType> = ({
         </div>
       </div>
     </>
-  );
+  )
 
-  return component;
-};
+  return component
+}

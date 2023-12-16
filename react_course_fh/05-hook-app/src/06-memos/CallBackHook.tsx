@@ -1,13 +1,13 @@
-import { useCallback, useState } from "react";
-import { ShowIncrement } from "./ShowIncrement";
+import { useCallback, useState } from 'react'
+import { ShowIncrement } from './ShowIncrement'
 
 export const CallBackHook = () => {
-  const [counter, setCounter] = useState(10);
+  const [counter, setCounter] = useState(10)
 
   //   useCallback needs to be used with React.memo
   const incrementFather = useCallback((range: number) => {
-    setCounter((value) => value + range);
-  }, []);
+    setCounter((value) => value + range)
+  }, [])
 
   const component = (
     <div className="text-center">
@@ -16,6 +16,6 @@ export const CallBackHook = () => {
 
       <ShowIncrement increment={incrementFather} />
     </div>
-  );
-  return component;
-};
+  )
+  return component
+}

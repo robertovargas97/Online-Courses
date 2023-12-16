@@ -1,6 +1,6 @@
-import { TodoList } from "./TodoList";
-import { TodoAdd } from "./TodoAdd";
-import { useTodo } from "../hooks/useTodo";
+import { TodoList } from './TodoList'
+import { TodoAdd } from './TodoAdd'
+import { useTodo } from '../hooks'
 
 export const TodoApp = () => {
   const {
@@ -9,7 +9,7 @@ export const TodoApp = () => {
     handleToggleTodo,
     getNumberOfPendingTodos,
     todos,
-  } = useTodo();
+  } = useTodo()
 
   const component = (
     <>
@@ -35,7 +35,7 @@ export const TodoApp = () => {
         </div>
       </div>
     </>
-  );
+  )
 
-  return component;
-};
+  return component
+}

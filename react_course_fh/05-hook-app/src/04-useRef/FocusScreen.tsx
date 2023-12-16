@@ -1,12 +1,12 @@
-import { useRef } from "react";
+import { useRef } from 'react'
 
 export const FocusScreen = () => {
-  const inputRef = useRef<HTMLInputElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null)
 
   const focusInput = () => {
-    console.log(inputRef);
-    inputRef.current?.select();
-  };
+    console.log(inputRef)
+    inputRef.current?.select()
+  }
 
   const component = (
     <>
@@ -28,6 +28,6 @@ export const FocusScreen = () => {
         Set Focus
       </button>
     </>
-  );
-  return component;
-};
+  )
+  return component
+}

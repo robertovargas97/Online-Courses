@@ -1,5 +1,5 @@
-import { TodoListPropTypes } from "./Todo.types";
-import { TodoItem } from "./TodoItem";
+import { TodoListPropTypes } from './Todo.types'
+import { TodoItem } from './TodoItem'
 
 export const TodoList: React.FC<TodoListPropTypes> = ({
   todos = [],
@@ -17,6 +17,6 @@ export const TodoList: React.FC<TodoListPropTypes> = ({
         />
       ))}
     </ul>
-  );
-  return component;
-};
+  )
+  return component
+}

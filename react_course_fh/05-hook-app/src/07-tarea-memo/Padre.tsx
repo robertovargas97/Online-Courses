@@ -1,14 +1,14 @@
-import { useCallback } from "react";
-import { Hijo } from "./Hijo";
-import { useState } from "react";
+import { useCallback } from 'react'
+import { Hijo } from './Hijo'
+import { useState } from 'react'
 
 export const Padre = () => {
-  const numeros = [2, 4, 6, 8, 10];
-  const [value, setValue] = useState(0);
+  const numeros = [2, 4, 6, 8, 10]
+  const [value, setValue] = useState(0)
 
   const incrementar = useCallback((num: number) => {
-    setValue((value) => value + num);
-  }, []);
+    setValue((value) => value + num)
+  }, [])
 
   return (
     <div>
@@ -22,5 +22,5 @@ export const Padre = () => {
       ))}
       {/* <Hijo /> */}
     </div>
-  );
-};
+  )
+}

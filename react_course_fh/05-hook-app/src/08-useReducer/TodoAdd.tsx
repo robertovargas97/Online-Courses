@@ -1,25 +1,25 @@
-import React from "react";
-import { useForm } from "../hooks/useForm";
-import { OnSubmitFunctionType, Todo, TodoAddPropTypes } from "./Todo.types";
+import React from 'react'
+import { useForm } from '../hooks/useForm'
+import { OnSubmitFunctionType, Todo, TodoAddPropTypes } from './Todo.types'
 
 export const TodoAdd: React.FC<TodoAddPropTypes> = ({ onNewTodo }) => {
   const { formState, onInputChange, onResetForm } = useForm({
-    description: "",
-  });
-  const { description } = formState;
+    description: '',
+  })
+  const { description } = formState
 
   const onFormSubmit: OnSubmitFunctionType = (event) => {
-    event.preventDefault();
+    event.preventDefault()
     if (description.length > 1) {
       const newTodo: Todo = {
         id: new Date().getTime(),
         description: description,
         done: false,
-      };
-      onNewTodo(newTodo);
-      onResetForm();
+      }
+      onNewTodo(newTodo)
+      onResetForm()
     }
-  };
+  }
 
   const component = (
     <form onSubmit={onFormSubmit}>
@@ -37,7 +37,7 @@ export const TodoAdd: React.FC<TodoAddPropTypes> = ({ onNewTodo }) => {
         Add <i className="bi bi-plus"></i>
       </button>
     </form>
-  );
+  )
 
-  return component;
-};
+  return component
+}

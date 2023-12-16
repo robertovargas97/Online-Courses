@@ -1,7 +1,5 @@
-import React from "react";
-import { TodoItemPropTypes} from "./Todo.types";
-
-
+import React from 'react'
+import { TodoItemPropTypes } from './Todo.types'
 
 export const TodoItem: React.FC<TodoItemPropTypes> = ({
   todo,
@@ -11,24 +9,24 @@ export const TodoItem: React.FC<TodoItemPropTypes> = ({
   const component = (
     <li
       className="list-group-item d-flex"
-      style={{ backgroundColor: "#1c272a", color: "white" }}
+      style={{ backgroundColor: '#1c272a', color: 'white' }}
     >
       <span
         className={`align-self-center me-auto ${
-          todo.done ? "text-decoration-line-through" : ""
+          todo.done ? 'text-decoration-line-through' : ''
         }`}
       >
-        {" "}
-        {todo.description}{" "}
+        {' '}
+        {todo.description}{' '}
       </span>
 
       <button
-        className={`btn btn-${todo.done ? "success" : "secondary"}`}
+        className={`btn btn-${todo.done ? 'success' : 'secondary'}`}
         onClick={() => onToggleTodo(todo.id)}
       >
         <i
           className={`align-self-center bi ${
-            todo.done ? "bi-check-square" : "bi-square"
+            todo.done ? 'bi-check-square' : 'bi-square'
           }`}
         ></i>
       </button>
@@ -37,7 +35,7 @@ export const TodoItem: React.FC<TodoItemPropTypes> = ({
         <i className="bi bi-trash"></i>
       </button>
     </li>
-  );
+  )
 
-  return component;
-};
+  return component
+}

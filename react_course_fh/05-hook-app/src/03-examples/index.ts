@@ -1,2 +1,2 @@
-export * from './PokemonCard';
-export * from './SearchPokemon';
+export * from './PokemonCard'
+export * from './SearchPokemon'

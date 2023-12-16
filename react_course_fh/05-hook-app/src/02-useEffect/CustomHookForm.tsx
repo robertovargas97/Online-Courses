@@ -1,15 +1,15 @@
-import { useForm } from "../hooks/useForm";
+import { useForm } from '../hooks/useForm'
 
 export const CustomHookForm = () => {
   const initialForm = {
-    username: "",
-    email: "",
-    password: "",
-  };
+    username: '',
+    email: '',
+    password: '',
+  }
 
-  const { formState, onInputChange, onResetForm } = useForm(initialForm);
+  const { formState, onInputChange, onResetForm } = useForm(initialForm)
 
-  const { username, email, password } = formState;
+  const { username, email, password } = formState
 
   return (
     <>
@@ -52,8 +52,11 @@ export const CustomHookForm = () => {
             />
           </div>
         </div>
-        <button onClick={onResetForm} className="btn btn-warning mt-2"> Reset</button>
+        <button onClick={onResetForm} className="btn btn-warning mt-2">
+          {' '}
+          Reset
+        </button>
       </div>
     </>
-  );
-};
+  )
+}

@@ -1,20 +1,20 @@
-import { useMemo, useState } from "react";
-import { useCounter } from "../hooks";
+import { useMemo, useState } from 'react'
+import { useCounter } from '../hooks'
 
 const heavyStuff = (iterationNumber = 100) => {
   for (let index = 0; index < iterationNumber; index++) {
-    console.log("Goooooo");
+    console.log('Goooooo')
   }
 
-  return `${iterationNumber} iterations were done`;
-};
+  return `${iterationNumber} iterations were done`
+}
 
 export const MemoHook = () => {
-  const { counter, increment } = useCounter(4000);
+  const { counter, increment } = useCounter(4000)
 
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(true)
 
-  const memorizedValue = useMemo(() => heavyStuff(counter), [counter]);
+  const memorizedValue = useMemo(() => heavyStuff(counter), [counter])
 
   const component = (
     <div className="text-center">
@@ -34,7 +34,7 @@ export const MemoHook = () => {
         Show/Hide {JSON.stringify(show)}
       </button>
     </div>
-  );
+  )
 
-  return component;
-};
+  return component
+}

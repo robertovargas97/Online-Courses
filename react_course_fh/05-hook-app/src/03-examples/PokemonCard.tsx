@@ -1,12 +1,12 @@
-import React, { useLayoutEffect, useRef, useState } from "react";
+import React, { useLayoutEffect, useRef, useState } from 'react'
 
 interface PokemonCardPropsType {
-  defaultColorUrl: string;
-  shinyColorUrl: string;
-  name: string;
-  isLoading: boolean;
-  increment: (value?: number) => void;
-  decrement: (value?: number, minValue?: number) => void;
+  defaultColorUrl: string
+  shinyColorUrl: string
+  name: string
+  isLoading: boolean
+  increment: (value?: number) => void
+  decrement: (value?: number, minValue?: number) => void
 }
 
 export const PokemonCard: React.FC<PokemonCardPropsType> = ({
@@ -17,31 +17,30 @@ export const PokemonCard: React.FC<PokemonCardPropsType> = ({
   increment,
   decrement,
 }) => {
-
-  const pokemonNameRef = useRef<HTMLHeadingElement>(null);
-  const [boxSize, setBoxSize] = useState({ width: 0, height: 0 });
+  const pokemonNameRef = useRef<HTMLHeadingElement>(null)
+  const [boxSize, setBoxSize] = useState({ width: 0, height: 0 })
 
   useLayoutEffect(() => {
-    const { width, height } = pokemonNameRef.current?.getBoundingClientRect()!;
+    const { width, height } = pokemonNameRef.current?.getBoundingClientRect()!
     setBoxSize({
       width: parseFloat(width.toFixed(3)),
       height: parseFloat(height.toFixed(3)),
-    });
-  }, [name]);
+    })
+  }, [name])
 
-  const [displayShiny, setDisplayShiny] = useState(true);
+  const [displayShiny, setDisplayShiny] = useState(true)
 
-  const [cardPictureUrl, setCardPictureUrl] = useState(defaultColorUrl);
+  const [cardPictureUrl, setCardPictureUrl] = useState(defaultColorUrl)
 
   const showShiny = () => {
-    setCardPictureUrl(shinyColorUrl);
-    setDisplayShiny(false);
-  };
+    setCardPictureUrl(shinyColorUrl)
+    setDisplayShiny(false)
+  }
 
   const showNormal = () => {
-    setCardPictureUrl(defaultColorUrl);
-    setDisplayShiny(true);
-  };
+    setCardPictureUrl(defaultColorUrl)
+    setDisplayShiny(true)
+  }
 
   const component = (
     <>
@@ -49,8 +48,8 @@ export const PokemonCard: React.FC<PokemonCardPropsType> = ({
         <img data-testid="gif" src={cardPictureUrl} />
         <h3
           style={{
-            display: "flex",
-            justifyContent: "center",
+            display: 'flex',
+            justifyContent: 'center',
           }}
           data-testid="pokemon-name"
           ref={pokemonNameRef}
@@ -65,7 +64,7 @@ export const PokemonCard: React.FC<PokemonCardPropsType> = ({
         onClick={() => decrement(1, 1)}
         disabled={isLoading}
       >
-        {"< "}
+        {'< '}
         Previous
       </button>
 
@@ -86,7 +85,7 @@ export const PokemonCard: React.FC<PokemonCardPropsType> = ({
         onClick={() => increment()}
         disabled={isLoading}
       >
-        Next{" >"}
+        Next{' >'}
       </button>
 
       <br />
@@ -94,6 +93,6 @@ export const PokemonCard: React.FC<PokemonCardPropsType> = ({
         <code>{JSON.stringify(boxSize)}</code>
       </div>
     </>
-  );
-  return component;
-};
+  )
+  return component
+}

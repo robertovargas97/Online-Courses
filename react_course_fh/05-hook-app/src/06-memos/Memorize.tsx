@@ -1,13 +1,11 @@
-import { useState } from "react";
-import { useCounter } from "../hooks";
-import { Small } from "./Small";
-
-
+import { useState } from 'react'
+import { useCounter } from '../hooks'
+import { Small } from './Small'
 
 export const Memorize = () => {
-  const { counter, increment } = useCounter(1);
+  const { counter, increment } = useCounter(1)
 
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(true)
 
   const component = (
     <div className="text-center">
@@ -26,7 +24,7 @@ export const Memorize = () => {
         Show/Hide {JSON.stringify(show)}
       </button>
     </div>
-  );
+  )
 
-  return component;
-};
+  return component
+}

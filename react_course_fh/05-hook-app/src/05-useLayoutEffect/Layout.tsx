@@ -1,25 +1,25 @@
-import { useCounter, useFetch, useForm } from "../hooks";
-import { PokemonCard, SearchPokemon } from "../03-examples";
+import { useCounter, useFetch, useForm } from '../hooks'
+import { PokemonCard, SearchPokemon } from '../03-examples'
 
 export const Layout = () => {
-  const { counter, increment, decrement, setCounter } = useCounter(1);
-  const url = `https://pokeapi.co/api/v2/pokemon/${counter}`;
-  const { data, isLoading, error } = useFetch(url);
+  const { counter, increment, decrement, setCounter } = useCounter(1)
+  const url = `https://pokeapi.co/api/v2/pokemon/${counter}`
+  const { data, isLoading, error } = useFetch(url)
 
-  const name = data?.name || "";
-  const defaultColorUrl = data?.sprites?.front_default || "";
-  const shinyColorUrl = data?.sprites?.front_shiny || "";
+  const name = data?.name || ''
+  const defaultColorUrl = data?.sprites?.front_default || ''
+  const shinyColorUrl = data?.sprites?.front_shiny || ''
 
-  const { formState, onInputChange, onResetForm } = useForm({ pokemonId: "" });
-  const { pokemonId } = formState;
+  const { formState, onInputChange, onResetForm } = useForm({ pokemonId: '' })
+  const { pokemonId } = formState
 
   const searchPokemon = () => {
-    const inputValue = parseInt(pokemonId);
+    const inputValue = parseInt(pokemonId)
     if (inputValue && inputValue > 0) {
-      onResetForm();
-      setCounter(inputValue);
+      onResetForm()
+      setCounter(inputValue)
     }
-  };
+  }
 
   const component = (
     <>
@@ -54,7 +54,7 @@ export const Layout = () => {
         )}
       </div>
     </>
-  );
+  )
 
-  return component;
-};
+  return component
+}

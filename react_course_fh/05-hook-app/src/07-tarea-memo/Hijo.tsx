@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react'
 
 interface HijoPropTypes {
-  numero: number;
-  incrementar: (num: number) => void;
+  numero: number
+  incrementar: (num: number) => void
 }
 
 export const Hijo: React.FC<HijoPropTypes> = React.memo(
   ({ numero, incrementar }) => {
-    console.log("  Me volví a generar :(  ");
+    console.log('  Me volví a generar :(  ')
 
     return (
       <button
@@ -16,6 +16,6 @@ export const Hijo: React.FC<HijoPropTypes> = React.memo(
       >
         {numero}
       </button>
-    );
-  }
-);
+    )
+  },
+)
