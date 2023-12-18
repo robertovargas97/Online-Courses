@@ -1,4 +1,4 @@
-import { Todo, TodoAction } from './Todo.types'
+import { Todo, TodoAction } from '../CustomHooks.types'
 
 export const todoReducer = (state: Todo[] = [], action: TodoAction) => {
   const removeTodo = (elementId: number) => {
