@@ -1,4 +1,5 @@
 import ReactDOM from 'react-dom/client'
+import { BrowserRouter } from 'react-router-dom'
 import './index.css'
 // import { MemoHook } from "./06-memos/MemoHook";
 // import { HookApp } from './HookApp'
@@ -14,7 +15,8 @@ import './index.css'
 // import { Padre } from "./07-tarea-memo/Padre";
 // import "./08-useReducer/intro-reducer";
 
-import { TodoApp } from './08-useReducer/TodoApp'
+// import { TodoApp } from './08-useReducer/TodoApp'
+import { MainApp } from './09-useContext/MainApp'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <>
@@ -30,6 +32,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     {/* <MemoHook /> */}
     {/* <CallBackHook/> */}
     {/* <Padre /> */}
-    <TodoApp />
+    {/* <TodoApp /> */}
+    <BrowserRouter>
+      <MainApp />
+    </BrowserRouter>
   </>,
 )
