@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "format-ts": "prettier --write \"src/**/*.ts\"",
     "format-tsx": "prettier --write \"src/**/*.tsx\"",
-    "format": "npm run format-ts && npm run format-tsx"
+    "format": "npm run format-ts && npm run format-tsx",
+    "test": "jest --watchAll"
   },
   "dependencies": {
     "localforage": "^1.10.0",
