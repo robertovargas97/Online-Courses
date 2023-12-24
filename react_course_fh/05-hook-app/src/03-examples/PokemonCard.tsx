@@ -21,7 +21,13 @@ export const PokemonCard: React.FC<PokemonCardPropsType> = ({
   const [boxSize, setBoxSize] = useState({ width: 0, height: 0 })
 
   useLayoutEffect(() => {
-    const { width, height } = pokemonNameRef.current?.getBoundingClientRect()!
+    let width = 0
+    let height = 0
+    const pokemonRef = pokemonNameRef.current
+    const rect = pokemonRef ? pokemonRef.getBoundingClientRect() : null
+    if (rect) {
+      ;({ width, height } = rect)
+    }
     setBoxSize({
       width: parseFloat(width.toFixed(3)),
       height: parseFloat(height.toFixed(3)),
@@ -84,6 +90,7 @@ export const PokemonCard: React.FC<PokemonCardPropsType> = ({
         className="btn btn-md btn-success"
         onClick={() => increment()}
         disabled={isLoading}
+        aria-label="nextButton"
       >
         Next{' >'}
       </button>
