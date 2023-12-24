@@ -11,7 +11,7 @@ export const LoginPage = () => {
       </div>
       <hr />
 
-      <pre>{JSON.stringify(user, null, 3)}</pre>
+      <pre data-testid="pre-tag">{JSON.stringify(user, null, 3)}</pre>
 
       <button
         className="btn btn-success mt-2"
