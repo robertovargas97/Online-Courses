@@ -18,7 +18,7 @@ describe('Main App Test Suir', () => {
       <MemoryRouter initialEntries={['/login']}>
         <MainApp />
       </MemoryRouter>,
-    )
+    ) 
 
     expect(screen.getByText('Login Page')).toBeTruthy()
   })
