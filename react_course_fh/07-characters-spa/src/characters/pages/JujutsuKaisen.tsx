@@ -1,6 +1,6 @@
 
 export const JujutsuKaisen = () => {
   return (
-    <h1>JujutsuKaisen</h1>
+    <h1>Jujutsu Kaisen</h1>
   )
 }
