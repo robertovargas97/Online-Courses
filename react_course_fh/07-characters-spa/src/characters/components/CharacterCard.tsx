@@ -2,6 +2,7 @@ import React from 'react'
 import { Character } from '../data/characters'
 
 import './card.styles.css'
+import { Link } from 'react-router-dom'
 
 type CharacterCardProps = {
   character: Character
@@ -22,9 +23,10 @@ export const CharacterCard: React.FC<CharacterCardProps> = ({
             src={characterImgUrl}
             alt="character"
           />
-          <h2 className="mt-2">{character.name}</h2>
+          <h2 className="mt-2">{character.name} </h2>
           <p className="first-appereance">First Appereance:</p>{' '}
           {character.first_appearance}
+          <Link to={`/character/${character.id}`}>More...</Link>
           <hr className="mt-3" />
           <div className="anime">
             <div className="wrapper">

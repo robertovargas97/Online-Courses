@@ -10,6 +10,12 @@
     overflow: hidden;
     transition: .5s all;
 
+    a {
+        text-decoration: none;
+        margin-top: 0.6rem;
+        color: #191919;
+    }
+
     hr {
         width: 100%;
         border: none;
