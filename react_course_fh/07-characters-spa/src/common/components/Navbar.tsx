@@ -1,4 +1,4 @@
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
 import { NavBarArgs } from './types'
 
 export const Navbar = () => {
@@ -6,11 +6,19 @@ export const Navbar = () => {
     return `nav-link ${args.isActive ? 'active' : ''}`
   }
 
+  const navigate = useNavigate()
+
+  const handleLogout = () => {
+    navigate('/login', {
+      replace: true,
+    })
+  }
+
   return (
     <nav className="navbar navbar-expand-sm bg-body-tertiary rounded-1">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-          Asociaciones
+          Animes
         </Link>
 
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
@@ -46,7 +54,9 @@ export const Navbar = () => {
         <div className="navbar-collapsed-flex justify-content-end">
           <ul className="navbar-nav ml-auto">
             <span className="nav-item nav-link text-info"> Roberto</span>
-            <button className="nav-item nav-link btn">Logout</button>
+            <button className="nav-item nav-link btn" onClick={handleLogout}>
+              Logout
+            </button>
           </ul>
         </div>
       </div>
