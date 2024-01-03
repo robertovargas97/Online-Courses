@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 import { getCharactersByAnime } from '../helpers'
 import { CharacterCard } from './CharacterCard'
 
@@ -11,7 +11,7 @@ export const CharactersList: React.FC<CharactersListPropts> = ({
   anime,
   logoUrl,
 }) => {
-  const characters = getCharactersByAnime(anime)
+  const characters = useMemo(() => getCharactersByAnime(anime), [anime])
 
   const component = (
     <div className="row rows-cols-1 row-cols-md-3 g-3 d-flex justify-content-center">

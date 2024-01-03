@@ -16,7 +16,7 @@ export const CharacterCard: React.FC<CharacterCardProps> = ({
   const characterImgUrl = `/assets/${character.id}.jpg`
   const component = (
     <>
-      <div className="character">
+      <div className="character animate__animated animate__fadeIn">
         <div className="main">
           <img
             className="characterImage"

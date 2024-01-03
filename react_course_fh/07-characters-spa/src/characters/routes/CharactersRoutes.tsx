@@ -13,7 +13,7 @@ export const CharactersRoutes = () => {
           <Route path="/jujutsu" element={<JujutsuKaisen />} />
 
           <Route path="/search" element={<Search />} />
-          <Route path="/character" element={<Character />} />
+          <Route path="/character/:id" element={<Character />} />
           <Route path="/" element={<Navigate to="dragon-ball" />} />
         </Routes>
       </div>
