@@ -1,5 +1,7 @@
 import { Link, NavLink, useNavigate } from 'react-router-dom'
 import { NavBarArgs } from './types'
+import { useContext } from 'react'
+import { AuthContext } from '../../auth/context'
 
 export const Navbar = () => {
   const handleActivePage = (args: NavBarArgs): string => {
@@ -8,10 +10,13 @@ export const Navbar = () => {
 
   const navigate = useNavigate()
 
+  const { user, logout } = useContext(AuthContext)
+
   const handleLogout = () => {
     navigate('/login', {
       replace: true,
     })
+    logout()
   }
 
   return (
@@ -53,7 +58,7 @@ export const Navbar = () => {
         </div>
         <div className="navbar-collapsed-flex justify-content-end">
           <ul className="navbar-nav ml-auto">
-            <span className="nav-item nav-link text-info"> Roberto</span>
+            <span className="nav-item nav-link text-info"> {user}</span>
             <button className="nav-item nav-link btn" onClick={handleLogout}>
               Logout
             </button>

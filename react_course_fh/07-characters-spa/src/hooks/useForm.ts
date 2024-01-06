@@ -7,18 +7,18 @@ export const useForm = (formFields: FormField = {}) => {
     event: React.ChangeEvent<HTMLInputElement>,
   ) => void
 
-  const [formState, setFormSate] = useState(formFields)
+  const [formState, setformState] = useState(formFields)
 
   const onInputChange: OnChangeFunctionType = ({ target }) => {
     const { name, value } = target
-    setFormSate({
+    setformState({
       ...formState,
       [name]: value,
     })
   }
 
   const onResetForm = () => {
-    setFormSate(formFields)
+    setformState(formFields)
   }
 
   return {
