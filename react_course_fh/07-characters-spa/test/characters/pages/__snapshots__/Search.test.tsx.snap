@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Serch Pages Test Suit should display correctly with the default values 1`] = `
+<div>
+  <h1>
+     Search
+  </h1>
+  <hr />
+  <div
+    class="row"
+  >
+    <div
+      class="col-4"
+    >
+      <form
+        data-testid="search-form"
+      >
+        <input
+          autocomplete="off"
+          class="form-control"
+          name="searchText"
+          placeholder="Search a character"
+          type="text"
+          value=""
+        />
+        <button
+          class="btn btn-success mt-2"
+        >
+          Search
+        </button>
+      </form>
+    </div>
+    <div
+      class="col-8"
+    >
+      <div
+        class="alert alert-info animate__animated animate__fadeIn"
+        data-testid="search-alert"
+      >
+        Search a Hero
+      </div>
+      <div
+        class="alert alert-danger animate__animated animate__fadeIn"
+        data-testid="error-alert"
+        style="display: none;"
+      >
+        No results for 
+        <b>
+           
+        </b>
+      </div>
+    </div>
+  </div>
+</div>
+`;

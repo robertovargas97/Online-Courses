@@ -6,7 +6,9 @@ type PageTitleProps = {
 export const PageTitle: React.FC<PageTitleProps> = ({ title }) => {
   const component = (
     <>
-      <h1 className="mt-4 text-center"> {title} </h1>
+      <h1 data-testid="DragonBallTitle" className="mt-4 text-center">
+        {title}
+      </h1>
       <hr />
     </>
   )

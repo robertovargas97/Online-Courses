@@ -2,7 +2,6 @@ import { useLocation, useNavigate } from 'react-router-dom'
 import { useForm } from '../../hooks/useForm'
 import { CharacterCard } from '../components/CharacterCard'
 
-import queryString from 'query-string'
 import { getCharactersByName } from '../helpers'
 import { jujutsu } from '../data/characters'
 import { dragonBallLogoUrl, jujutsuLogoUrl } from '.'
@@ -14,18 +13,19 @@ export type OnSubmitFunctionType = (
 export const Search = () => {
   const navigate = useNavigate()
   const location = useLocation()
-  const { query = '' } = queryString.parse(location.search)
+  const query = location.search ? location.search.split('=')[1] : ''
 
-  const charactersByName = getCharactersByName(query as string)
+  const charactersByName = getCharactersByName(query)
 
   const showSearch = query?.length !== 0
   const showError = query?.length !== 0 && charactersByName.length === 0
 
-  const { formState, onInputChange } = useForm({ searchText: query as string })
+  const { formState, onInputChange } = useForm({ searchText: query })
   const { searchText } = formState
 
   const handleOnSearch: OnSubmitFunctionType = (event) => {
     event.preventDefault()
+    console.log('TEEEES')
     navigate(`?query=${searchText}`)
   }
 
@@ -35,7 +35,7 @@ export const Search = () => {
       <hr />
       <div className="row">
         <div className="col-4">
-          <form onSubmit={handleOnSearch}>
+          <form data-testid="search-form" onSubmit={handleOnSearch}>
             <input
               type="text"
               placeholder="Search a character"
@@ -61,6 +61,7 @@ export const Search = () => {
           )} */}
 
           <div
+            data-testid="search-alert"
             className="alert alert-info animate__animated animate__fadeIn"
             style={{ display: showSearch ? 'none' : '' }}
           >
@@ -68,6 +69,7 @@ export const Search = () => {
           </div>
 
           <div
+            data-testid="error-alert"
             className="alert alert-danger animate__animated animate__fadeIn"
             style={{ display: !showError ? 'none' : '' }}
           >

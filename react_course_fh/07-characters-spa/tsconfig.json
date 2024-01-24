@@ -22,7 +22,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "types": ["jest", "node", "@types/jest"]
+    "types": ["jest", "node", "@types/jest", "@testing-library/react"]
   },
   "include": [
     "src",
