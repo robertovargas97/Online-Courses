@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { PayloadAction, createSlice } from "@reduxjs/toolkit";
 
 export interface PokemonSliceState {
   page: number;
@@ -16,8 +16,13 @@ export const pokemonSlice = createSlice({
   name: "pokemon",
   initialState,
   reducers: {
-    myReducer: (state /* action: PayloadAction<number> */) => {},
+    startLoadingPokemons: (state /* action: PayloadAction<number> */) => {
+      state.isLoading = true;
+    },
+    setPokemons: (state, action: PayloadAction<number>) => {
+      console.log("set Pokemons");
+    },
   },
 });
 
-export const { myReducer } = pokemonSlice.actions;
+export const { startLoadingPokemons, setPokemons } = pokemonSlice.actions;
