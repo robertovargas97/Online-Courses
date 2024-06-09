@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { PayloadAction, createSlice } from "@reduxjs/toolkit";
 
 export interface CounterState {
   counter: number;
@@ -19,8 +19,14 @@ export const counterSlice = createSlice({
       // immutable state based off those changes
       state.counter += 1;
     },
+    increment_by: (state, action: PayloadAction<number>) => {
+      state.counter += action.payload;
+    },
+    decrement: (state) => {
+      state.counter -= 1;
+    },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { increment } = counterSlice.actions;
+export const { increment, decrement, increment_by } = counterSlice.actions;
